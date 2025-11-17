@@ -3,83 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ficha Personal - Pia Gopanas</title>
+    <title>Ficha Personal</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header class="header">
+        <h1>Ficha Personal</h1>
+        <div class="modo-noche">🌙</div>
+    </header>
+    <main class="container">
+        <section class="perfil-header">
+            <img src="images/fotoficha.jpg" alt="Foto de perfil de Pia" class="perfil-foto">
+            <h2>Maria Pia Gopanas</h2>
+        </section>
+        <section class="info-grid">
+            <div class="info-item">
+                <span>Nombre Completo</span>
+                <p>Maria Pia Gopanas</p>
+            </div>
+            <div class="info-item">
+                <span>Nro de Legajo</span>
+                <p>1161381</p>
+            </div>
+            <div class="info-item">
+                <span>Materia</span>
+                <p>Diseño y desarrollo Web</p>
+            </div>
+            <div class="info-item">
+                <span>Curso</span>
+                <p>536117</p>
+            </div>
+        </section>
+        <section class="proyectos-grid">
+            <article class="card">
+                <img src="fotoportada.jpg" alt="Fan page de Gossip girl" class="card-img">
+                <div class="card-body">
+                    <h3>Fan page</h3>
+                    <div class="card-links">
+                        <a href="https://piaggg.github.io/TRABAJO-FANPAGE/" target="_blank" rel="noopener noreferrer">Repositorio</a>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <img src="opart.jpg" alt="Local comercial OP ART STUDIO" class="card-img">
+                <div class="card-body">
 
-<header>
-    <h1> Ficha Personal </h1>
-    <button id="theme-toggle">🌙</button>
-</header>
-
-<main class="card">
-
-    <div class="perfil">
-    <img src="images/fotoficha.jpg" alt="Foto de Pia">
-    <h2> Maria Pia Gopanas</h2>
-    </div>
-
-    <div class="datos">
-        <div class="item">
-            <p><strong>Nombre Completo:</strong></p>
-            <span> Maria Pia Gopanas</span>
-        </div>
-
-        <div class="item">
-            <p><strong>Número de Legajo:</strong></p>
-            <span>1161381</span>
-        </div>
-
-        <div class="item">
-            <p><strong>Materia:</strong></p>
-            <span>Diseño y Desarrollo Web</span>
-        </div>
-
-        <div class="item">
-            <p><strong>Curso:</strong></p>
-            <span>536117</span>
-        </div>
-    </div>
-
-    <section class="proyectos">
-        <a href="https://piaggg.github.io/TRABAJO-FANPAGE/index.html" target="_blank" class="proyecto">
-            <img src="">
-            <p>Fan Page</p>
-        </a>
-
-        <a href="https://piaggg.github.io/Trabajo-Practico-Obligatorio/index.html" target="_blank" class="proyecto">
-            <img src="opart.jpg">
-            <p>Local Comercial</p>
-        </a>
-
-        <a href="https://github.com/contrerasleonel/MindAndDesign" target="_blank" class="proyecto">
-            <img src="">
-            <p>Centro Comercial</p>
-        </a>
-    </section>
-
-</main>
-
-<script>
-  const btn = document.getElementById("theme-toggle");
-
-  btn.addEventListener("click", () => {
-    document.body.classList.toggle("dark");
-
-    // guardar preferencia
-    if (document.body.classList.contains("dark")) {
-      localStorage.setItem("theme", "dark");
-    } else {
-      localStorage.setItem("theme", "light");
-    }
-  });
-
-  // cargar preferencia guardada
-  if (localStorage.getItem("theme") === "dark") {
-    document.body.classList.add("dark");
-  }
-</script>
+                    <h3>Local comercial</h3>
+                    <div class="card-links">
+                        <a href="https://piaggg.github.io/Trabajo-Practico-Obligatorio/" target="_blank" rel="noopener noreferrer">Repositorio</a>
+                        <a href="https://docs.google.com/document/d/1gwb3wD51SgDox0CX5Dp6Dtu-5beCaRBGMSnuNnoPLGI/edit?tab=t.0" target="_blank" rel="noopener noreferrer">Documentación</a>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <img src="comercial.jpg" alt="Centro comercial" class="card-img">
+                <div class="card-body">
+                    <h3>Centro comercial</h3>
+                    <div class="card-links">
+                            <a href="https://github.com/contrerasleonel/MindAndDesign" target="_blank" rel="noopener noreferrer">Repositorio</a>
+                            <a href="https://www.canva.com/design/DAG45uKeTY4/cwyJ6JvmOFuuY_IanrvPng/edit?utm_content=DAG45uKeTY4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="noopener noreferrer">Documentación</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p> © 2025 Todos los derechos reservados - Pia Gopanas</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="main.js"></script>
 
 </body>
 </html>
